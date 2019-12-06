@@ -35,26 +35,26 @@
   }
 
   function ynCheck1() {
-    if (document.getElementById('mealSelectYes').checked) {
+    if (document.getElementById('mealSelectYes1').checked) {
         document.getElementById('mealChoices1').style.display = 'block';
     }
-    else if (document.getElementById('mealSelectNo').checked) {
+    else if (document.getElementById('mealSelectNo1').checked) {
         document.getElementById('mealChoices1').style.display = 'none';
     }
   }
   function ynCheck2() {
-    if (document.getElementById('mealSelectYes').checked) {
+    if (document.getElementById('mealSelectYes2').checked) {
         document.getElementById('mealChoices2').style.display = 'block';
     }
-    else if (document.getElementById('mealSelectNo').checked) {
+    else if (document.getElementById('mealSelectNo2').checked) {
         document.getElementById('mealChoices2').style.display = 'none';
     }
   }
   function ynCheck3() {
-    if (document.getElementById('mealSelectYes').checked) {
+    if (document.getElementById('mealSelectYes3').checked) {
         document.getElementById('mealChoices3').style.display = 'block';
     }
-    else if (document.getElementById('mealSelectNo').checked) {
+    else if (document.getElementById('mealSelectNo3').checked) {
         document.getElementById('mealChoices3').style.display = 'none';
     }
   }
