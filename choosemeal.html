@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-// Comment
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-- <html class="no-js"> <!--<![endif]-->
+<script src="javaproject.js"></script>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,7 +33,7 @@
             <a href="excerise3.html"><img src="meal3.png" /></a>
         </div>
     -->
-    
+
     <form action="action_page.php">
         <div class="container">
           <h1>Input Meals</h1>
@@ -41,43 +41,50 @@
               please put no.
           </p>
           <hr>
-      
+
           <label for="radio"><b>Breakfast</b></label>
-          <input type="radio" name="mealtime" value="1">Yes
-          <input type="radio" name="mealtime" value="2">No<br/>
+          <input type="radio" onclick="ynCheck1();" name="mealtime" value="1" id="mealSelectYes">Yes
+          <input type="radio" onclick="ynCheck1();" name="mealtime" value="2" id="mealSelectNo" checked>No<br/>
 
-          <select name="choices">
-              <option>Eggs</option>
-              <option>Hash Browns</option>
-              <option>Cereal</option>
-          </select></br></br>
-      
+          <div id="mealChoices1" class="hide">
+            <select name="choices">
+                <option>Eggs</option>
+                <option>Hash Browns</option>
+                <option>Cereal</option>
+            </select></br></br>
+          </div>
+
           <label for="radio"><b>Lunch</b></label>
-          <input type="radio" name="lunchtime" value="1">Yes
-          <input type="radio" name="lunchtime" value="2">No<br/>
+          <input type="radio" onclick="ynCheck2();" name="lunchtime" value="1" id="mealSelectYes">Yes
+          <input type="radio" onclick="ynCheck2();" name="lunchtime" value="2" id="mealSelectNo" checked>No<br/>
 
-          <select name="lunchchoices">
-            <option>Sandwich</option>
-            <option>Pasta</option>
-            <option>Fruit</option>
-        </select></br></br>
-    
-      
+          <div id="mealChoices2" class="hide">
+            <select name="lunchchoices">
+              <option>Sandwich</option>
+              <option>Pasta</option>
+              <option>Fruit</option>
+            </select></br></br>
+          </div>
+
+
           <label for="radio"><b>Dinner</b></label>
-          <input type="radio" name="dinnertime" value="1">Yes
-          <input type="radio" name="dinnertime" value="2">No<br/>
-      
-          <select name="dinnerchoices">
-            <option>Steak</option>
-            <option>Burrito</option>
-            <option>Pizza</option>
-        </select></br></br>
+          <input type="radio" onclick="ynCheck3();" name="dinnertime" value="1" id="mealSelectYes">Yes
+          <input type="radio" onclick="ynCheck3();" name="dinnertime" value="2" id="mealSelectNo" checked>No<br/>
+
+          <div id="mealChoices3" class="hide">
+            <select name="dinnerchoices">
+              <option>Steak</option>
+              <option>Burrito</option>
+              <option>Pizza</option>
+            </select></br></br>
+          </div>
+
         <hr>
         <button><a href="excerise1.html">Next</a></button>
           <button type="submit" class="register">Submit</button>
-          <button type="reset" class="registerfail">Reset</button>
+          <button type="reset" class="registerfail" onclick="clearAll();">Reset</button>
         </div>
-      
+
       </form>
     </body>
 </html>

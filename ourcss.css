@@ -5,15 +5,15 @@ basketball 300
 running  100
 cycling 264
 
-scrambled egg = 91 
-caesar salad = 94 
+scrambled egg = 91
+caesar salad = 94
 hamburger = 354
 
 yogurt = 100
 burrito bowl = 510
 1 slice of pizza = 254
 
-banana = 105 
+banana = 105
 grilled cheese = 71
 steak = 679
 */
@@ -22,6 +22,9 @@ a{
     color: white;
 }
 
+.hide {
+  display: none;
+}
 button{
     font-size: 1rem;
     background-color: red;
@@ -170,4 +173,3 @@ li a {
         /*flex-wrap: wrap;*/
     }
 }
-        

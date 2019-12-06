@@ -1,35 +1,65 @@
-function F11() {
-    alert("364 Calories")
+  function F11() {
+    alert("364 Calories");
   }
 
   function F12() {
-    alert("564 Calories")
+    alert("564 Calories");
   }
 
   function F13() {
-    alert("400 Calories")
+    alert("400 Calories");
   }
 
   function F21() {
-    alert("239 Calories")
+    alert("239 Calories");
   }
 
   function F22() {
-    alert("439 Calories")
+    alert("439 Calories");
   }
 
   function F23() {
-    alert("275 Calories")
+    alert("275 Calories");
   }
 
   function F31() {
-    alert("555 Calories")
+    alert("555 Calories");
   }
 
   function F32() {
-    alert("755 Calories")
+    alert("755 Calories");
   }
 
   function F33() {
-    alert("591 Calories")
+    alert("591 Calories");
+  }
+
+  function ynCheck1() {
+    if (document.getElementById('mealSelectYes').checked) {
+        document.getElementById('mealChoices1').style.display = 'block';
+    }
+    else if (document.getElementById('mealSelectNo').checked) {
+        document.getElementById('mealChoices1').style.display = 'none';
+    }
+  }
+  function ynCheck2() {
+    if (document.getElementById('mealSelectYes').checked) {
+        document.getElementById('mealChoices2').style.display = 'block';
+    }
+    else if (document.getElementById('mealSelectNo').checked) {
+        document.getElementById('mealChoices2').style.display = 'none';
+    }
+  }
+  function ynCheck3() {
+    if (document.getElementById('mealSelectYes').checked) {
+        document.getElementById('mealChoices3').style.display = 'block';
+    }
+    else if (document.getElementById('mealSelectNo').checked) {
+        document.getElementById('mealChoices3').style.display = 'none';
+    }
+  }
+  function clearAll() {
+    document.getElementById('mealChoices1').style.display = 'none';
+    document.getElementById('mealChoices2').style.display = 'none';
+    document.getElementById('mealChoices3').style.display = 'none';
   }
