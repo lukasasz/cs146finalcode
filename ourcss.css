@@ -1,0 +1,173 @@
+/*
+
+
+basketball 300
+running  100
+cycling 264
+
+scrambled egg = 91 
+caesar salad = 94 
+hamburger = 354
+
+yogurt = 100
+burrito bowl = 510
+1 slice of pizza = 254
+
+banana = 105 
+grilled cheese = 71
+steak = 679
+*/
+
+a{
+    color: white;
+}
+
+button{
+    font-size: 1rem;
+    background-color: red;
+    border: 2px solid red;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 700px;
+}
+
+body{
+    background-color:#fa5757;
+}
+header {
+    text-align: center;
+    color: red;
+    background-color: black;
+    /*font-size: 80px;*/
+    display: flexbox;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
+
+#meal1 {
+    background-image: url("meal1.png");
+    background-repeat: no-repeat;
+    border: none;
+    display: flex;
+    width: 281px;
+    height: 214px;
+}
+
+#meal2 {
+    background-image: url("meal2.png");
+    background-repeat: no-repeat;
+    border: none;
+    width: 281px;
+    height: 214px;
+}
+
+#meal3 {
+    background-image: url("meal3.png");
+    background-repeat: no-repeat;
+    border: none;
+    width: 281px;
+    height: 214px;
+}
+
+button span {
+    display: none;
+}
+
+#info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: #ffc58f;
+    max-width: 500px;
+    text-align: center;
+    flex: auto;
+    margin-left: 500px;
+}
+
+
+/*box*/
+
+/*nav bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+@media only screen and (min-width: 999px) {
+    header {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #info {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 998px) and (min-width: 400px) {
+    header {
+        justify-content: center;
+    }
+
+    #info {
+        /*flex-wrap: wrap;*/
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    header {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    ul {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    li {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+        li a {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+    #info {
+        /*flex-wrap: wrap;*/
+    }
+}
+        
